@@ -24,7 +24,7 @@ const EnderecoInfo: React.FC<EnderecoInfoProps> = ({ content }) => {
       {cidade && estado && (
         <Container>
           <span className="cidade">{cidade}</span> {' - '}
-          <span className="estado">{estado}</span>
+          <span className="estado">{estado.token}</span>
         </Container>
       )}
       {cep && (
