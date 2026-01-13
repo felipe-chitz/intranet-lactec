@@ -1,5 +1,5 @@
 # syntax=docker/dockerfile:1
-ARG VOLTO_VERSION=latest
+ARG VOLTO_VERSION=19.0.0-alpha.20
 FROM plone/frontend-builder:${VOLTO_VERSION} AS builder
 
 COPY --chown=node packages/volto-lactec-intranet /app/packages/volto-lactec-intranet
