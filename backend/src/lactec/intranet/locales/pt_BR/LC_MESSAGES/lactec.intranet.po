@@ -1,7 +1,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
-"POT-Creation-Date: 2022-05-25 17:12+0000\n"
+"POT-Creation-Date: 2026-01-13 12:43+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI +ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -13,3 +13,27 @@ msgstr ""
 "Language-Name: English\n"
 "Preferred-Encodings: utf-8 latin1\n"
 "Domain: DOMAIN\n"
+
+#: lactec/intranet/profiles.zcml:22
+msgid "Create example content to showcase the new website"
+msgstr ""
+
+#: lactec/intranet/profiles.zcml:22
+msgid "Intranet Lactec: Example content"
+msgstr ""
+
+#: lactec/intranet/profiles.zcml:13
+msgid "Intranet Lactec: Install"
+msgstr ""
+
+#: lactec/intranet/profiles.zcml:30
+msgid "Intranet Lactec: Uninstall"
+msgstr ""
+
+#: lactec/intranet/profiles.zcml:13
+msgid "Package to configure a new Intranet Lactec site"
+msgstr ""
+
+#: lactec/intranet/profiles.zcml:30
+msgid "Uninstall Intranet Lactec setup."
+msgstr ""
