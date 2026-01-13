@@ -4,6 +4,6 @@
            prefix="plone"
            purge="false"
   >
-    <value key="email_from_name">Intranet Lactec</value>
+    <value key="email_from_name">Intranet da Lactec</value>
   </records>
 </registry>
