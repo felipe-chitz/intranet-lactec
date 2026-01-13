@@ -41,7 +41,8 @@
     "@plonegovbr/volto-social-media",
     "@kitconcept/volto-bm3-compat",
     "@plone-collective/volto-image-editor",
-    "@kitconcept/volto-light-theme"
+    "@kitconcept/volto-light-theme",
+    "@plonegovbr/volto-vlibras"
   ],
   "theme": "@kitconcept/volto-light-theme",
   "dependencies": {
@@ -61,7 +62,8 @@
     "@kitconcept/volto-social-blocks": "1.0.0-alpha.8",
     "@kitconcept/volto-light-theme": "8.0.0-alpha.9",
     "@plonegovbr/volto-code-block": "3.0.0",
-    "@plone-collective/volto-image-editor": "1.0.0"
+    "@plone-collective/volto-image-editor": "1.0.0",
+    "@plonegovbr/volto-vlibras": "*"
   },
   "peerDependencies": {
     "react": "^18.2.0",
