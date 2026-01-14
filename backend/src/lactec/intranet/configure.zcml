@@ -20,7 +20,7 @@
   <include package=".indexers" />
   <include package=".serializers" />
   <include package=".vocabularies" />
-
+  <include package=".behaviors" />
   <!-- -*- extra stuff goes here -*- -->
 
 </configure>
