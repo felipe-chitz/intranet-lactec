@@ -1,15 +1,12 @@
 import React from 'react';
 import Image from '@plone/volto/components/theme/Image/Image';
 import { Container } from '@plone/components';
+import ContactInfo from 'volto-lactec-intranet/components/ContactInfo/ContactInfo';
+import EnderecoInfo from 'volto-lactec-intranet/components/EnderecoInfo/EnderecoInfo';
 import type { Pessoa } from 'volto-lactec-intranet/types/content';
-import ContactInfo from '../ContactInfo/ContactInfo';
-import EnderecoInfo from '../EnderecoInfo/EnderecoInfo';
 
 interface PessoaViewProps {
   content: Pessoa;
-  location?: {
-    pathname: string;
-  };
   [key: string]: any;
 }
 
@@ -17,7 +14,7 @@ const PessoaView: React.FC<PessoaViewProps> = (props) => {
   const { content } = props;
 
   return (
-    <Container id="page-document" className="view-wrapper Pessoa-view">
+    <Container id="page-document" className="view-wrapper pessoa-view">
       {content.image && (
         <Container className={'image'}>
           <Image
@@ -29,6 +26,15 @@ const PessoaView: React.FC<PessoaViewProps> = (props) => {
             responsive={true}
           />
         </Container>
+      )}
+      {content.cargo && (
+        <span className={`cargo cargo-${content.cargo.token}`}>
+          {content.cargo.title}
+        </span>
+      )}
+      <h1 className="documentFirstHeading">{content.title}</h1>
+      {content.description && (
+        <p className="documentDescription">{content.description}</p>
       )}
       <ContactInfo content={content} />
       <EnderecoInfo content={content} />
