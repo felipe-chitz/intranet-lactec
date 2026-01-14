@@ -1,10 +1,11 @@
 import React from 'react';
-import Image from '@plone/volto/components/theme/Image/Image';
 import UniversalLink from '@plone/volto/components/manage/UniversalLink/UniversalLink';
+import Image from '@plone/volto/components/theme/Image/Image';
 import { Container } from '@plone/components';
 import ContactInfo from 'volto-lactec-intranet/components/ContactInfo/ContactInfo';
 import EnderecoInfo from 'volto-lactec-intranet/components/EnderecoInfo/EnderecoInfo';
 import type { Pessoa } from 'volto-lactec-intranet/types/content';
+import AreaInfo from 'volto-lactec-intranet/components/AreaInfo/AreaInfo';
 
 interface PessoaViewProps {
   content: Pessoa;
@@ -38,11 +39,9 @@ const PessoaView: React.FC<PessoaViewProps> = (props) => {
         {content.description && (
           <p className="documentDescription">{content.description}</p>
         )}
-        {content.area && (
-          <UniversalLink className={'area'} item={content.area}>
-            {content.area.title}
-          </UniversalLink>
-        )}
+        <UniversalLink className={'area'} item={content.area}>
+          <AreaInfo content={content.area} icon={true} />
+        </UniversalLink>
         <ContactInfo content={content} />
         <EnderecoInfo content={content} />
       </Container>
