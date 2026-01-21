@@ -5,5 +5,11 @@
            zope.lifecycleevent.IObjectAddedEvent"
       handler=".area.added"
       />
+  <subscriber
+      for="lactec.intranet.content.area.IArea
+           zope.lifecycleevent.IObjectModifiedEvent"
+      handler=".area.modified"
+      />
+
 
 </configure>
