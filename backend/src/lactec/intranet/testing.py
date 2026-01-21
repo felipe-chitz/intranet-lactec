@@ -47,3 +47,4 @@ ACCEPTANCE_TESTING = FunctionalTesting(
     ),
     name="Lactec.IntranetLayer:AcceptanceTesting",
 )
+
